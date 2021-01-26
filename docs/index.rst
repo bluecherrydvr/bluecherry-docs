@@ -8,5 +8,6 @@ Table of Contents
    server-install
    setup-configuration
    camerasetup
+  onvif-triggering
    client
    development
