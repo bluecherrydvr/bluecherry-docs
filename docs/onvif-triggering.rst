@@ -39,13 +39,14 @@ Verifying Configuration
 
 If the camera supports ONVIF detection and you followed the steps correctly you will see something similar to these lines::
 
+`
 Jan 25 20:34:54 x5 bc-server[18037]: I(8/Back deck): Switching to new recording schedule 'triggered'
 Jan 25 20:34:54 x5 bc-server[18037]: I(8/Back deck): Starting onvif events thread 2119984896 for device 8 ...
 Jan 25 20:34:54 x5 bc-server[18037]: I(8/Back deck): Subscribed to ONVIF events at http://192.168.86.200/onvif/Events/PullSubManager_2021-01-26T02:34:54Z_0
-
+`
 
 When a motion event occurs the log should show:
 
-``
+`
 Jan 25 20:35:15 x5 bc-server[18037]: I(8/Back deck): Marking the passed packet with TriggerFlag
-``
+`
