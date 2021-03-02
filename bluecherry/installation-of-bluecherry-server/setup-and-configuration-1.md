@@ -2,7 +2,8 @@
 
 ### Logging in
 
-**Connect to the server with a web browser**
+**Connect to the server with a web browser**  
+
 
 By default the server runs on a port 7001, and requires SSL. You can access the server using [https://hostname:7001](https://hostname:7001/)
 
@@ -63,7 +64,9 @@ Under the Devices tab, select ‘Schedule’ under each camera that you want to 
 
 ### Editing / viewing users
 
-![\_images/user-selection.png](https://bluecherry-apps.readthedocs.io/en/latest/_images/user-selection.png) ![\_images/users.png](https://bluecherry-apps.readthedocs.io/en/latest/_images/users.png)
+![\_images/user-selection.png](https://bluecherry-apps.readthedocs.io/en/latest/_images/user-selection.png) 
+
+![\_images/users.png](https://bluecherry-apps.readthedocs.io/en/latest/_images/users.png)
 
 **Click on user’s Full Name. Note: To prevent you from accidently removing yourself it is not possible for you to remove the account you are logged in as.**
 
@@ -73,7 +76,9 @@ Under the Devices tab, select ‘Schedule’ under each camera that you want to 
 
 ### Restrict cameras per user
 
-**Restricting access on a per-user basis**![\_images/user-list.png](https://bluecherry-apps.readthedocs.io/en/latest/_images/user-list.png)
+**Restricting access on a per-user basis**
+
+\*\*\*\*![\_images/user-list.png](https://bluecherry-apps.readthedocs.io/en/latest/_images/user-list.png)
 
 From the ‘Users’ section click on any of the names in the list. For this example, we are going to pick on Joe Blow, who we do not trust.
 
@@ -89,13 +94,17 @@ From the ‘Users’ section click on any of the names in the list. For this exa
 
 [\*\*](https://bluecherry-apps.readthedocs.io/en/latest/setup-configuration.html#id3)Select ‘System Log’ from the left menu bar \*\* .. image:: img/systemlog-select.png
 
-**This log shows everything that has been logged to /var/log/bluecherry.log and to /var/lib/bluecherry/www-error.log Note: These logs is randomly rotated, so it will likely not contain all of the logs since the server has started.**![\_images/system-log.png](https://bluecherry-apps.readthedocs.io/en/latest/_images/system-log.png)
+**This log shows everything that has been logged to /var/log/bluecherry.log and to /var/lib/bluecherry/www-error.log Note: These logs is randomly rotated, so it will likely not contain all of the logs since the server has started.**
+
+\*\*\*\*![\_images/system-log.png](https://bluecherry-apps.readthedocs.io/en/latest/_images/system-log.png)
 
 ### Admin password reset procedure
 
 In case you’ve lost or forgot Bluecherry server Admin password, you can change it to default in database.
 
-`mysql -u bluecherry -p bluecherry -e "update Users set password='b22dec1d6cfa580962f3a3796a5dc6b3', salt='1234' where username='Admin';"`
-
 This resets the login to Admin and the password to bluecherry
+
+```
+mysql -u bluecherry -p bluecherry -e "update Users set password='b22dec1d6cfa580962f3a3796a5dc6b3', salt='1234' where username='Admin';"
+```
 
