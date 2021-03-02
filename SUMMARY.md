@@ -6,5 +6,5 @@
 ## Bluecherry
 
 * [Installation of Bluecherry server](bluecherry/installation-of-bluecherry-server/README.md)
-  * [Setup and configuration](bluecherry/installation-of-bluecherry-server/setup-and-configuration-1.md)
+  * [Setup and configuration](bluecherry/installation-of-bluecherry-server/setup-and-configuration.md)
 
